@@ -4,18 +4,24 @@
   "description": "This is from the free code camp tutorial located at https://www.youtube.com/watch?v=n1mdAPFq2Os",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "author": "jon bernal",
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^2.18.2",
+    "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "graphql": "^15.3.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "2.1.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jon-Bernal/merng-fcc-tutorial.git"
