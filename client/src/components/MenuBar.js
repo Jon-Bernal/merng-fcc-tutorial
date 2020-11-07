@@ -3,10 +3,9 @@ import { Menu, Segment, Container } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
 const MenuBar = () => {
-  const [activeItem, setactiveItem] = useState("home");
   const pathname = window.location.pathname;
-
   const path = pathname === "/" ? "home" : pathname.substr(1);
+  const [activeItem, setactiveItem] = useState(path);
 
   function handleItemClick(e, { name }) {
     setactiveItem(name);
