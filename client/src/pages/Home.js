@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div>
       <Grid columns={3} divided>
-        <Grid.Row>
+        <Grid.Row id="page-title">
           <h1>Recent Posts</h1>
         </Grid.Row>
         <Grid.Row>
@@ -26,7 +26,10 @@ const Home = () => {
             posts &&
             posts.map((post) => {
               return (
-                <Grid.Column key={post.id} style={{ color: "white" }}>
+                <Grid.Column
+                  key={post.id}
+                  style={{ color: "white", marginBottom: "20px" }}
+                >
                   <PostCard post={post} />
                 </Grid.Column>
               );

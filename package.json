@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
+    "client": "cd client && npm start",
+    "server": "npm start",
+    "devServer": "npm start",
+    "dev": "concurrently \"npm run devServer\" \"npm run client\"",
     "start": "node index.js"
   },
   "author": "jon bernal",
@@ -20,6 +23,7 @@
     "mongoose": "^5.10.10"
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "prettier": "2.1.2"
   },
   "repository": {
@@ -29,5 +33,6 @@
   "bugs": {
     "url": "https://github.com/Jon-Bernal/merng-fcc-tutorial/issues"
   },
-  "homepage": "https://github.com/Jon-Bernal/merng-fcc-tutorial#readme"
+  "homepage": "https://github.com/Jon-Bernal/merng-fcc-tutorial#readme",
+  "proxy": "http://localhost:5000"
 }

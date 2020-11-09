@@ -20,6 +20,7 @@ const MenuBar = () => {
           onClick={handleItemClick}
           as={Link}
           to="/"
+          // color="teal"
         />
         <Menu.Menu position="right">
           <Menu.Item
@@ -28,6 +29,7 @@ const MenuBar = () => {
             onClick={handleItemClick}
             as={Link}
             to="/login"
+            // style={{ color: "teal" }}
           />
           <Menu.Item
             name="register"
@@ -35,6 +37,7 @@ const MenuBar = () => {
             onClick={handleItemClick}
             as={Link}
             to="/register"
+            // style={{ color: "teal" }}
           />
         </Menu.Menu>
       </Menu>
